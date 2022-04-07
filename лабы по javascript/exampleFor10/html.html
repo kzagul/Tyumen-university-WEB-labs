@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="" id="forma" name="">
+        <div>
+            <input type="checkbox" name="drink" id="drinkcheck">
+            <label for="drinkcheck">Очень люблю кофе, хочу скидку
+                <span class="loyalty-form__pink">*</span></label>
+        </div>
+        <div>
+            <input type="checkbox" class="loyalty-form__checkbox-style" name="cake" id="cakecheck">
+            <label class="loyalty-form__checkbox-text" for="cakecheck">Хочу скидку на тортики <span
+                    class="loyalty-form__pink">*</span></label>
+        </div>
+        <input name="name" type="text" placeholder="Введите имя" autocomplete="off" />
+        <br>
+        <input name="email" type="email" placeholder="Введите e-mail" />
+        <br />
+        <input name="phone" type="tel" placeholder="Введите телефон" />
+        <br />
+        <input type="submit" id="submitdata" value="Отправить">
+    
+        <input type="checkbox" name="check" id="personaldata">
+        <label for="personaldata">Согласен(а) на обработку моих
+            персональных
+            данных</label>
+    </form>
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    text-align: left;
+    font-size: 18px;
+    
+    background-color: rgb(119, 230, 46);
+   }
+
+.Title span {
+    color: rgb(226, 178, 20);
+}
+
+
+.Title {
+    position: absolute; 
+    font-size: 28px;
+    text-align: center;
+    margin-top: 18;  
+    margin-bottom: 18;  
+    margin-left: 18;
+    margin-right: 18;
+    font-family: Arial;
+    color: rgb(46, 77, 6);
+    text-transform: uppercase;
+
+    top: 5px;
+    left: 50px;
+
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+    border: rgb(235, 95, 14) 3px groove;
+    background: moccasin;
+
+    
+}
+.Alltext {
+    background: #f69a21;
+    margin-top: 40;  
+    margin-bottom: 18;  
+    margin-left: 18;
+    margin-right: 250;
+    border: rgb(235, 95, 14) 3px groove;
+}
+
+
+.Text {
+    
+    font-size: 22px;
+    text-align: left;
+    margin-top: 90;  
+    margin-bottom: 18;  
+    margin-left: 50;
+    margin-right: 200;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+}
+
+.Items {
+    
+    font-size: 18px;
+    text-align: left;
+    margin-top: 18;  
+    margin-bottom: 18;  
+    margin-left: 50;
+    margin-right: 400;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    line-height: 2 em;
+}
+
+img{
+    margin: 5px 0px 0px 5px;
+    padding: 0;
+    float: left;
+
+    position: absolute; 
+    margin-top:510;  
+    margin-bottom: 18;  
+    margin-left: 430;
+    top: -100px;
+    left: 520px; 
+    width: 380px;
+    height: 380px;
+}
+
+
+.Link {
+    position: absolute; 
+    font-size: 22px;
+    text-align: left;
+    
+    font-family: Arial;
+    color: rgb(235, 115, 17);
+
+    margin-bottom: 18; 
+
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: rgb(246, 133, 3) 3px groove;
+    background: moccasin;
+    top: 730px; 
+    left: 1000px; 
+
+}
+
+.Conclusion {
+    
+    position: absolute; 
+
+    font-size: 22px;
+    text-align: left;
+    margin-top:18;  
+    margin-bottom: 18;  
+    margin-left: 24;
+    margin-right: 18;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+
+
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: rgb(253, 80, 12) 3px groove;
+    background: moccasin;
+    top: 160px; 
+    left: 1000px; 
+}
+
+
+

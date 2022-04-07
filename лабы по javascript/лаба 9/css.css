@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(221, 221, 221);
+    display:flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#main-form div {
+    margin-bottom: 15px;
+}
+
+header h1{ 
+    display:flex;
+    justify-content: center;
+}
+
+#foodAndPicture {
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+@media (max-width: 424px)
+{
+    #foodAndPicture {
+    display:flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 60%;
+}
+}
+
+#foodAndPicture div {
+    margin: 10px;
+}
+
+#listOrder{
+    display:flex;
+    flex-direction: column;
+}
+#listOrder div{
+    display:flex;
+    flex-direction: row;
+}
+
+#picture {
+    display:flex;
+    justify-content: center;
+}
+#picture img {
+    width: 100%;
+    min-width: 210px;
+    max-width: 430px;
+    height: auto;
+    border-radius: 20px;
+}
+#accountResult {
+    width: 100%;
+    text-align: center;
+}
+#accountResult input {
+    width: 50%;
+    height: 50px;
+}

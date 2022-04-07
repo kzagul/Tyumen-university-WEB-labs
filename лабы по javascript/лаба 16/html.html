@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+    <form method="post">
+        <h2>Тест</h2>
+        <!-- 1 -->
+        <div id='radioBtn'>
+            <h3>1)Тип задач, в которых производится выбор решения из множества альтернатив, называется:</h3>
+            <div>
+                <input type="radio" name="quest1" id="radioBtn1" onChange="checkForm()" required>
+                <label for="sort1">Интерпретация</label>
+            </div>
+            <div>
+                <input type="radio" name="quest1" id="radioBtn2" onChange="checkForm()">
+                <label for="sort2">Диагностика</label>
+            </div>
+            <div>
+                <input type="radio" name="quest1" id="radioBtn3" onChange="checkForm()">
+                <label for="sort3">Коррекция</label>
+            </div>
+            <div>
+                <input type="radio" name="quest1" id="radioBtn4" onChange="checkForm()">
+                <label for="sort3">Классификация</label>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div id="checkBox">
+            <h3>2)Вершина байесовской сети доверия называется маргинальной, если:</h3>
+            <div>
+                <input type="checkbox" name="quest2" id="checkBox1" value="" onChange="checkForm()" required> <!-- onChange="checkForm()" -->
+                <label for="checkBox1">Значение в узле получено в результате опыта </label>
+            </div>
+            <div>
+                <input type="checkbox" name="quest2" id="checkBox2" value="" onChange="checkForm()">
+                <label for="checkBox2">У вершины нет «родителя»</label>
+            </div>
+            <div>
+                <input type="checkbox" name="quest2" id="checkBox3" value="" onChange="checkForm()">
+                <label for="checkBox3">Вершина является узлом верхнего уровня дерева</label>
+            </div>
+            <div>
+                <input type="checkbox" name="quest2" id="checkBox4" value="" onChange="checkForm()">
+                <label for="checkBox4">Вершина является «листом» дерева</label>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div id="text">
+            <h3>3)Дано 800 документов. Определите обратную документную частоту IDF для слова, которое было найдено в 10 документах:</h3>
+            <input type="number" name="textInput" placeholder="введите ответ" id="textInput" onChange="checkForm()" required />
+        </div>
+
+        <!-- 4 -->
+        <div id="menu">
+            <h3>4)Задача считается слабо структурированной, если для ее решения требуется:</h3>
+            <select placeholder="давление" id="task4"  onChange="func4Question()" required>
+                <option id="task4quest" value="">Выберите вариант ответа</option>
+                <option id="task4quest1" name="question4">Разработка уникального алгоритма для каждой ситуации</option>
+                <option id="task4quest2" name="question4">Привлечение большого числа специалистов проблемной области</option>
+                <option id="task4quest3" name="question4">Оценка вычислительной мощности алгоритмов</option>
+                <option id="task4quest4" name="question4">Описание проблемной области на формальном языке</option>
+            </select>
+        </div>
+
+        <br>
+
+
+
+        <!-- res -->
+        <div id="result" visibility="hidden">
+            <label>Результат: </label>
+            <input id="resRes" type="text" readonly>
+        </div>
+
+        <br>
+
+        <!-- 5 -->
+        <div id="btn">
+            <button type="submit" name="submit" id="submit" >
+                Завершить тестирование
+            </button>
+        </div>
+
+        <br>
+
+        <div id="textResult" visibility="hidden">
+            <p id="textRes"></p>
+        </div>
+
+    </form>
+
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Расчет обоев для комнаты</h1>
+    </header>
+    <form id="main-form" method="post"> 
+        <hr>
+        <h4>Параметры комнаты (м.)</h4>
+        <div id="paramsRoom">
+            <div class="val">
+                <label for="text">Длина комнаты:</label>
+                <input type="number" name="roomLength" placeholder="введите длину" id="roomLength" required/>
+            </div>
+            <div class="val">
+                <label for="text">Ширина комнаты:</label>
+                <input type="number" name="roomWidth" placeholder="введите ширину" id="roomWidth" required/>
+            </div>
+            <div class="val">
+                <label for="text">Высота комнаты:</label>
+                <input type="number" name="roomHeight" placeholder="введите высоту" id="roomHeight" required/>
+            </div>
+        </div>
+        <br>
+
+        <h4>Параметры рулона обоев (м.)</h4>
+        <div id="paramsRulon">
+            <div class="val">
+                <label for="text">Ширина рулона:</label>
+                <input type="number" name="rulonWidth" placeholder="введите ширину" id="rulonWidth" required/>
+            </div>
+            <div class="val">
+                <label for="text">Длина рулона:</label>
+                <input type="number" name="rulonLength" placeholder="введите ширину" id="rulonLength" required/>
+            </div>
+            <div class="val">
+                <label for="text">Количество рулонов:</label>
+                <input type="number" name="rulonNum" placeholder="кол-во рулонов" id="rulonNumid" readonly/>
+            </div>
+            <div class="val" id="buttonDown">
+                <label for="text"></label>
+                <input id="button_first" type="submit" name="submit" onclick="" value="Вычислить!"/>
+            </div>
+        </div>
+        <hr>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

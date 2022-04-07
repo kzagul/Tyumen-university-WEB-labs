@@ -1,0 +1,33 @@
+form{
+    display:flex;
+    flex-direction:column;
+    width: 80%;
+    background-color:azure;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px
+}
+form h2{
+    display:flex;
+    flex-direction:column;
+    margin: auto;
+}
+#radioBtn{
+    display:flex;
+    flex-direction:column;
+}
+#checkBox{
+    display:flex;
+    flex-direction:column;
+}
+#result{
+    display:flex;
+    flex-direction:row;
+    margin: auto;
+}
+#btn button{
+    display:flex;
+    flex-direction:column;
+    margin: auto;
+}

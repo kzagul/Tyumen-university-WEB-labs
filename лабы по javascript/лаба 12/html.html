@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+    <header><h2>Работаем с данными</h2></header>
+    <form id="main-form" method="post">
+        <div id="left">
+            <div id="deterBlock">
+                <h4>Определить</h4>
+                <div id="leftBlocks">
+                    <div>
+                        <div>
+                            <input type="radio" name="deter" id="deter1" > <!-- onclick="func1()" -->
+                            <label>Количество дней</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="deter" id="deter2" >
+                            <label>Количество выходных</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="deter" id="deter3" >
+                            <label>Количество рабочих дней</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="deter" id="deter4">
+                            <label>Количество полных недель</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="deter" id="deter5">
+                            <label>Количество полных месяцев</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="showRes">
+                <label>Результат</label>
+                <input id="result" type="text" name="textRes" readonly>
+            </div>
+
+            <div id="submit">
+                <button>
+                    Вычислить
+                </button>
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="startPeriod">
+                <label>Начало периода</label>
+                <input type="text" id="startDate">
+            </div>
+
+            <div id="endPeriod">
+                <label>Конец периода</label>
+                <input type="date" id="endDate">
+            </div>
+        </div>
+
+    </form>
+    <script src="js.js"></script>
+    <script src="js2.js"></script>
+</body>
+</html>

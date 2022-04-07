@@ -1,0 +1,96 @@
+body {
+    background-color:aquamarine;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#formInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+#formInputs div {
+    margin-top: 15px;
+}
+
+
+#leftColumn, #rightColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+#leftColumn div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+
+
+#rightColumn div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+#divResult{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#divResult div {
+    margin: 5px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#buttons button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#result { 
+    width: 150%;
+    height: 50px;
+}
+textarea {
+    width: 70%;
+    height: 5em;
+    padding: 5px;
+    resize: none;
+}
+@media (max-width: 500) {
+    #leftColumnOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5px;
+    }
+
+    #rightColumn div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 5px;
+    }
+}

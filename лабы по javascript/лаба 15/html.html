@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="site">
+        <div id="fleeBanner" hidden="true">
+            <div id="topBanner">
+                <h3>Изменить содержание страницы</h3>
+                <img id="krest1" src="images/krestik.jpg" alt="" onclick="hideBanner()">
+            </div>
+            <div id="inputLabel">
+                <label for="inputHigh">Заголовок</label>
+                <input type="text" id="inputHigh" v-model="pageLabel">
+            </div>
+        </div>
+
+        <div id="textPicture">
+                <div id="settings" hidden="true">
+                    <div id="topSet">
+                        <h2>Настройки страницы</h2>
+                        <img id="krest2" src="images/krestik.jpg" alt="" onclick="hideSettings()">
+                    </div>
+                    <h4 id="labelForBackground">Фон страницы</h4>
+                    <label for="colors">Цвет:</label>
+                    <div id="colors">
+                        <div id="color1" v-on:click="changeBackgroundColor"></div>
+                        <div id="color2" v-on:click="changeBackgroundColor"></div>
+                        <div id="color3" v-on:click="changeBackgroundColor"></div>
+                    </div>
+
+                    <label for="gifs">Изображение</label>
+                    <div id="gifs">
+                        <div id="gif1" v-on:click="changeBackgroundGif"><img src="images/FON_01.gif" ></div>
+                        <div id="gif2" v-on:click="changeBackgroundGif"><img src="images/FON_02.gif" ></div>
+                        <div id="gif3" v-on:click="changeBackgroundGif"><img src="images/FON_03.gif" ></div>
+                    </div>
+
+                    <h4 id="labelForLabel">Заголовок</h4>
+                    <div id="labels">
+                        <label for="letColors">Цвет шрифта:</label>
+                        <label for="fontWidth">Кегль шрифта:</label>
+                    </div>
+                    <div id="letColorsAndFont">
+                        <div id="letColors">
+                            <div id="letColor1" v-on:click="changeLabelColor"><p></p></div>
+                            <div id="letColor2" v-on:click="changeLabelColor"></div>
+                            <div id="letColor3" v-on:click="changeLabelColor"></div>
+                        </div>
+                        <div id="fontWidth">
+                                <select id="optSelect" name="" id="" v-on:change="changeLabelFont">
+                                    <option class="options" value="14">14пт</option>
+                                    <option class="options" value="18" selected>18пт</option>
+                                    <option class="options" value="22">22пт</option>
+                                    <option class="options" value="28">28пт</option>
+                                    <option class="options" value="36">36пт</option>
+                                </select>
+                        </div>
+                    </div>
+
+                    <h4 id="labelForText">Текст</h4>
+                    <label id="labelForText1" for="">Выравнивание:</label>
+                    <div class="stylesOfRedacting">
+                        <div id="style1R" v-on:click="changeParagraphOrientation">Справа </div>
+                        <div id="style2R" v-on:click="changeParagraphOrientation">По центру </div>
+                        <div id="style3R" v-on:click="changeParagraphOrientation">По ширине </div>
+                        <div id="style4R" v-on:click="changeParagraphOrientation">Слева</div>
+                    </div>
+                    <label id="labelForText2" for="">Стиль шрифта:</label>
+                    <div class="stylesOfRedacting">
+                        <div id="style1Red" v-on:click="changeParagraphWeight">Полужирный/обычный </div>
+                        <div id="style2Red" v-on:click="changeParagraphWeight">Подчеркнутый/обычный </div>
+                        <div id="style3Red" v-on:click="changeParagraphWeight">Курсив/обычный </div>
+                    </div>
+
+                    <h4 id="labelIllustration">Иллюстрация</h4>
+                    <label for="">Высота:</label>
+                    <div>
+                        <input id="inputHeight" type="number" v-on:change="changePictureHeight">
+                        <label for="">px</label>
+                    </div>
+
+                    <!-- Кнопка -->
+                    <div id="btnChangeLabel">
+                        <button onclick="showFleeBanner()">
+                            Изменить содержимое
+                        </button>
+                    </div>
+
+
+                </div>
+                <h1 id="labelLabel">{{pageLabel}}</h1>
+                <!-- Экология и климат Тюмени -->
+                <div id="pars">
+                    <img :src="photo.img2" alt="" id="pic">
+                    <p class="paragraph"> Климат в Тюмени загадочен и не предсказуем. Благодаря своему положению, Тюмень подвержена влиянию ветров, что идут с
+                        севера через равнину и с юга из жарких казахских степей. Когда-то, во времена бабушек, в Тюмени были суровые зимы с
+                        низкими температурами и большим количеством снега.</p>
+                    <p class="paragraph"> Сейчас всё не так. Снежная зима – это редкость, а сама зима тёплая и температура ниже тридцати – скорее исключение,
+                        воспринимаемое как великий и, к сожалению, редкий праздник у детей школьного возраста. Обычно, такие детские праздники
+                        случаются в первом месяце года.</p>
+                    <p class="paragraph"> Времена года здесь состоят из затяжных вёсен, короткого лета, осени и трёх-четырёх месячной зимы. Лето хоть и коротко,
+                        но в эти дни солнце особо старается выдать все причитающееся городу лучи тепла. Одежда на низкие плюсовые температуры
+                        висит у жителей города всю позднюю весну, лето и раннюю осень, и является наиболее часто носимой. А ситуация, когда
+                        утром выходишь в тёплой весенней куртке, в обед её оставляешь на работе и идёшь погулять под приятным солнцем в рубашке,
+                        вечером возвращаешься домой опять в куртке под дождём, а поздно вечером отправляешься гулять с собакой уже в куртке на
+                        минусовую температуру под снег, никого не удивляет, хоть и является не приятным осенним или весенним сюрпризом для
+                        большинства горожан.</p>
+                    <p class="paragraph"> Город сейчас в стадии экономического и территориального роста. Вследствие чего экологическое состояние ежегодно
+                        ухудшается. Будучи и ранее неудовлетворительной, экологическая ситуация становиться всё более критичной. Чем ближе к
+                        центру города, тем более сильно влияние выбросов транспорта. Зелёные насаждения в городе справиться не могут. Из-за
+                        количества транспорта, дороги расширяются за счёт прилегающим к ним территориям засаженным газонами и деревьями.
+                        Особенно сильно воздействие ТЭЦ, которые из-за роста города вынуждены работать всё более интенсивно.</p>
+                    <p class="paragraph"> Кроме ТЭЦ есть ещё немало предприятий оказывающих негативное влияние на окружающую среду и здоровье граждан города. И их
+                        число продолжает увеличиваться. И ещё одним фактором приближающий переход Тюмени в список городов с вредной для
+                        проживания экологией – посёлки, всё сильнее разрастающиеся вокруг города и оттесняющие леса от его границ.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+
+        <button onclick="showSettingBars()">
+            Открыть настройки страницы
+        </button>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>

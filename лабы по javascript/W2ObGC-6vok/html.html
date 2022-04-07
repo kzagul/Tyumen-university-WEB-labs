@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body id="mainform">
+    
+    <!-- <p id="text" title="Обычный текст">
+        Text
+    </p>
+    <span class="simple-text">Text 1</span>
+    <span class="simple-text">Text 2</span>
+    <span class="simple-text">Text 3</span> -->
+    <header>
+        <h2>Фон</h2>
+    </header>
+    <form id="main-form" method="post">
+        <label for="name">Картинки:</label>
+        <p><input name="dzen" type="radio">1</p>
+        <p><input name="dzen" type="radio">2</p>
+        <p><input name="dzen" type="radio">3</p>
+		
+	   
+		
+		
+        <label for="password">Место:</label>
+        <select name="pass" placeholder="давление" id="pass">
+            <option selected>Фон страницы</option>
+            <option>Фон таблицы</option>
+        </select>
+        <br><br>
+
+        <p><input type="submit" value="Вымостить фон"></p>
+        <!-- <label for="repass">Проверка пароля:</label>
+        <input type="password" name="repass" placeholder="Проверка пароля" id="repass" /><br><br>
+
+        <span>
+            Пол:
+        </span>
+        <input type="radio" name="state" id="male" value="Мужской"/>
+        <label for="repass">Мужской</label>
+        <input type="radio" name="state" id="female" value="Женский"/>
+        <label for="repass">Женский</label><br><br> -->
+        
+        <div id="error"></div>
+
+        <input id="button_first" type="submit" name="submit"  value="Готово"/>
+
+        <div id="newForm">
+            <div id="newForm1"></div>
+            <div id="newForm2"></div>
+            <div id="newForm3"></div>
+            <button id="button_again"  onclick="window.location.href = 'http://127.0.0.1:5500/html.html';">Еще раз</button>
+        </div>
+        <br><br>
+    </form>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

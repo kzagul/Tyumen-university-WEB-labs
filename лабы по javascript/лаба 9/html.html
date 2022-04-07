@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Сделайте заказ</h1>
+    </header>
+    <form id="main-form" class="formclass">
+        <div id="foodAndPicture">
+            <div id="listOrder">
+                <div>
+                    <input type="checkbox" name="foodDish" id="dish1" value="" onChange="checkForm()">
+                    <label for="dish1">Фаршированная форель</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="foodDish" id="dish2" value="" onChange="checkForm()">
+                    <label for="dish2">Телятина под соусом</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="foodDish" id="dish3" value="" onChange="checkForm()">
+                    <label for="dish3">Крем суп из шампиньонов</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="foodDish" id="dish4" value="" onChange="checkForm()">
+                    <label for="dish4">Рулет со шпинатом</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="foodDish" id="dish5" value="" onChange="checkForm()">
+                    <label for="dish5">Пицца Гавайская</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="foodDish" id="dish6" value="" onChange="checkForm()">
+                    <label for="dish6">Ванильный коктейль</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="foodDish" id="dish7" value="" onChange="checkForm()">
+                    <label for="dish7">Напиток Грейпфрут</label>
+                </div>
+            </div>
+
+            <div id="picture">
+                <img id="image" src="images/default.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div id="accountResult">
+            <label for="resRub">Счет</label>
+            <input id="resRub" type="text" placeholder = "0 руб" readonly>
+        </div>
+
+        <div id="buttonCount">
+            <button onclick="getOrder()">
+                Заказать
+            </button>
+        </div>
+
+        <div id="showRes">
+            
+        </div>
+
+    </form>
+
+
+
+    <script src="js.js"></script>
+</body>
+</html>
+
+

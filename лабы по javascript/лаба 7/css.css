@@ -1,0 +1,36 @@
+body {
+    background-color:rgb(226, 204, 228);
+}
+header h1 {
+    color:rgb(31, 75, 45);
+    text-align:center;
+}
+
+h4 {
+    margin-left: 5%;
+}
+
+#paramsRulon, #paramsRoom {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    margin-left: 5%;
+    width: 70%;
+}
+.val {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width: 424px){
+.val {
+    flex-direction: column;
+    }
+}
+#buttonDown {
+    /* margin-right: 5%; */
+    padding-right: 66px;
+
+}

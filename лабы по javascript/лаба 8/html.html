@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Печать фотографий</h1>
+    </header>
+    <form id="main-form" method="post">
+        <div id="choose-section">
+            <div id="format" class="radio-form">
+                <p>Формат</p>
+                <div>
+                    <input type="radio" id="contactChoice1" name="format" value="9x12">
+                    <label for="contactChoice1">9x12</label>
+                </div>
+                <div>
+                    <input type="radio" id="contactChoice2" name="format" value="10x15">
+                    <label for="contactChoice2">10x15</label>
+                </div>
+                <div>
+                    <input type="radio" id="contactChoice3" name="format" value="18x24" required>
+                    <label for="contactChoice3">18x24</label>
+                </div>
+            </div>
+
+            <div id="paper" class="radio-form">
+                <p>Бумага</p>
+                <div>
+                    <input type="radio" id="contactChoice4" name="paper" value="Матовая">
+                    <label for="contactChoice1">Матовая</label>
+                </div>
+                <div>
+                    <input type="radio" id="contactChoice5" name="paper" value="Глянцевая" required>
+                    <label for="contactChoice2">Глянцевая</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="kolvoCount">
+            <div id="kolvo">
+                <div class="kolvo1">
+                    <label for="contactChoice1">Количество</label>
+                </div>
+                <div>
+                    <input type="number" name="contact" id="input-kolvo" placeholder="от 48 до 56" onChange="check_it()" required>
+                </div>
+            </div>
+            <div id="count">
+                <input type="submit" value="Вычислить" name="submit" onclick=""/>
+            </div>
+        </div>
+
+        <div id="info">
+            <textarea id="infoWrite" type="comment" name="resultInfo" placeholder=""  readonly> </textarea>
+        </div>
+    </form>
+
+    <script src="js.js"></script>
+</body>
+</html>

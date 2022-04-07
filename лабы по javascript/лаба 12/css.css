@@ -1,0 +1,75 @@
+body {
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:60%;
+    margin:auto;
+    background-color: rgb(209, 209, 209);
+    padding: 10px
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#left div {
+    /* margin-bottom: 30px; */
+}
+
+#deterBlock {
+    padding: 0;
+    border: 2px solid;
+    border-color: rgb(238, 238, 238);
+    margin-bottom: 35px;
+}
+
+#showRes {
+    margin-bottom: 35px;
+}
+
+#leftBlocks div{
+    display: flex;
+    flex-direction: column;
+}
+#leftBlocks div div{
+    display: flex;
+    flex-direction: row;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#startPeriod {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+#endPeriod {
+    display: flex;
+    justify-content: center;
+}
+
+#right div {
+    display: flex;
+    flex-direction: column;
+}

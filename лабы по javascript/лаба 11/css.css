@@ -1,0 +1,62 @@
+body {
+    background-color:rgb(221, 221, 221);
+}
+/* form {
+    margin: 2px;
+    border: 3px solid;
+    border-color: blue;
+    height: 400px;
+} */
+#main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#numberElems {
+    display: flex;
+    justify-content: right;
+}
+#numberElems div {
+    margin: 10px;
+}
+#numbers input {
+    width: 50px;
+}
+#generatedArray, #resultedArray {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 70%;
+}
+.numberLeft {
+    width: 50px;
+}
+
+#arrFunctions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#leftColumn {
+    border: 2px solid;
+    border-color: rgb(212, 212, 212);
+    padding: 10px;
+}
+#rightColumn {
+    border: 2px solid;
+    border-color: rgb(212, 212, 212);
+    padding: 10px;
+} 
+
+#leftColumn div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1px;
+}
+
+#buttonSection {
+    display: flex;
+    justify-content: center;
+}

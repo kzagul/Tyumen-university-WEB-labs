@@ -1,0 +1,47 @@
+#images {
+    display:flex;
+    justify-content:center;
+}
+
+#block{
+    display:flex;
+    flex-direction:column;
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+    margin: 5px;
+    justify-content:center;
+}
+
+.size {
+    width:400px;
+    height: 133px;
+    border: 3px solid;
+    border-color:rgb(54, 54, 54);
+    margin: 15px;
+}
+.size img {
+    width:100%;
+}
+
+#inputLine {
+    display: flex;
+    justify-content:center;
+    margin: 15px
+}
+
+#inputLine input{
+    width: 25%;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: 15px;
+}
+#btn1, #btn2 {
+    margin: 15px;
+}

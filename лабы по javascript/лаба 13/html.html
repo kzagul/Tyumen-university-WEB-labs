@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <form id="form" method="post">
+        <div class="field">
+            <div>
+                <label>Имя</label>
+            </div>
+            <div id="rightDiv">
+                <input type="text" id="nameInput" onchange="checkInput()" required>
+            </div>
+            
+            <img id="img1a" src="images/krestik.jpg" hidden="true">
+            <img id="img1b" src="images/galka.jpg" hidden="true">
+        </div>
+
+        <div class="field">
+            <div>
+                <label>Логин</label>
+            </div>
+            <div>
+                <input id="loginInput" type="text" onchange="checkInput()" required>
+            </div>
+
+            <img id="img2a" src="images/krestik.jpg" hidden="true">
+            <img id="img2b" src="images/galka.jpg" hidden="true">
+
+        </div>
+
+        <div class="field">
+            <div>
+                <label>Пароль</label>
+            </div>
+            <div>
+                <input id="pass1" type="text" onchange="checkInput()" required>
+            </div>
+
+            <img id="img3a" src="images/krestik.jpg" hidden="true">
+            <img id="img3b" src="images/galka.jpg" hidden="true">
+        </div>
+
+        <div class="field">
+            <div>
+                <label>Подтвердите пароль</label>
+            </div>
+            <div>
+                <input id="pass2" type="text" onchange="checkInput()" required>
+            </div>
+
+            <img id="img4a" src="images/krestik.jpg" hidden="true">
+            <img id="img4b" src="images/galka.jpg" hidden="true">
+        </div>
+
+        <p id="wrongPass" hidden="true">Пароли не совпадают!</p>
+
+        <div class="field">
+            <div>
+                <label>Дата рождения</label>
+            </div>
+            <div>
+                <input id="dateDD" type="text" onchange="checkInput()" required>
+            </div>
+
+            <img id="img5a" src="images/krestik.jpg" hidden="true">
+            <img id="img5b" src="images/galka.jpg" hidden="true">
+
+        </div>
+
+        <div class="field">
+            <div>
+                <label>Телефон</label>
+            </div>
+            <div>
+                <input  type="text" id="phone" name="phone" onchange="checkInput()" required>
+            </div>
+
+            <img id="img6a" src="images/krestik.jpg" hidden="true">
+            <img id="img6b" src="images/galka.jpg" hidden="true">
+
+        </div>
+
+        <div class="field">
+            <div>
+                <label>ИНН</label>
+            </div>
+            <div>
+                <input id="INN" type="text" onchange="checkInput()" required>
+            </div>
+
+            <img id="img7a" src="images/krestik.jpg" hidden="true">
+            <img id="img7b" src="images/galka.jpg" hidden="true">
+        </div>
+
+        <div class="field">
+            <div>
+                <label>Пол</label>
+            </div>
+            <div id="radioBtn" class="radios">
+                <input type="radio" id="gender1" name="gender" value="a">
+                <label for="gender1">М</label>
+            </div>
+            <div class="radios">
+                <input type="radio" id="gender2" name="gender" value="b">
+                <label for="gender2">Ж</label>
+            </div>
+            <div class="radios">
+                <input type="radio" id="gender3" name="gender" value="c" checked>
+                <label for="gender3"> Не выбрано </label>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <button type="submit" id="button1" disabled="true">
+                Отправить анкету
+            </button>
+
+            <button type="submit" id="button2" disabled="true">
+                Заполнить еще раз
+            </button>
+        </div>
+
+
+        <div id='showResult'>
+
+
+
+        </div>
+
+    </form>
+
+
+    <script src="js.js"></script>
+</body>
+</html>

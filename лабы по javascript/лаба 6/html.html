@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+    <script src="jsnew.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Анкета: прогноз погоды</h2>
+    </header>
+    
+    <form class="anketa" id="main-form" method="post">
+        <!-- Поле ввода -->
+        <div class="input-form">
+            <div>
+                <h3>Дата</h3>
+            </div>
+            <div>
+                <input id="date" class="input-data" type="date" 
+                    name="input-form" value="2021-06-01"/>
+            </div>
+        </div>
+
+
+        <!-- Выпадающий список -->
+        <div class="select-form" name="sel">
+            <h3>Атмосферное давление</h3>
+            <select class="sel" name="select-form">
+                <option>740</option>
+                <option>745</option>
+                <option selected>750</option>
+                <option>755</option>
+                <option>760</option>
+                <option>770</option>
+            </select>
+        </div>
+
+        <!-- Кнопка -->
+        <!-- <div class="button-form" name="but">
+            <button onClick="vyvod()" >
+                Вывести информацию
+            </button>
+        </div> -->
+        <div class="button-form">
+            <!-- <input value="Вывести информацию" onclick="view()" type="button"> -->
+            <input type="submit" name="submit" onclick="" value="Вывести информацию" /><br><br>
+
+        </div>
+
+        <div id="result-form">
+            
+        </div>
+    </form>
+
+
+    <div id="new-form">
+        <div>
+            <h2>Информация о погоде</h2>
+        </div>
+        <div>
+            <h3>Сегодня <span>(дата)</span></h3>
+        </div>
+        <div>
+            <h3>Показания барометра <span>(давление)</span></h3>
+        </div>
+        <div>
+            <h3>Прогноз погоды <span>(ненастье/ясно)</span></h3>
+        </div>
+    </div>
+</body>
+</html>

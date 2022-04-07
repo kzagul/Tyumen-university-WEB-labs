@@ -1,0 +1,49 @@
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+.t2 th {
+    background-color: rgb(243, 243, 243);
+    font-family: arial;
+    border: 1px solid rgb(219, 83, 42); /* Рамка вокруг ячеек */
+   }
+
+.t2 td {
+    background-color: rgb(192, 190, 190);
+    font-family: arial;
+    border: 1px solid rgb(219, 83, 42); /* Рамка вокруг ячеек */
+   } 
+
+
+.rowG {
+    background-color: rgb(31, 200, 31);
+}
+.rowR {
+    background-color: rgb(199, 43, 43);
+}
+.bl {
+    color: blue;
+}
+.violet {
+     background-color: rgb(187, 128, 192);
+     color: blue;
+}
+.yellow {
+     background-color: rgb(205, 212, 103);
+}
+.blue {
+     background-color: rgb(61, 181, 211);
+}
+
+.t3 th {
+    
+    font-family: arial;
+}
+.t3 td {
+    
+    font-family: arial;
+}
+

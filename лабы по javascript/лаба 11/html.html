@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="main-form" method="post">
+        <div id="numberElems">
+            <div id="numbers">
+                <label for="writeNum">Число элементов массива</label>
+                <input type="number" name="writeNum" id="writeNum" value="" onkeyup="checkInputs()">
+            </div>
+            <div id="createArr">
+                <button type="submit" name="submit1" id="submit1" disabled="disabled">
+                    Создать массив
+                </button>
+            </div>
+        </div>
+        <div id="generatedArray">
+            <label for="array">Исходный массив</label>
+            <input type="text" name="array" id="array" value="" readonly>
+        </div>
+        <div id="arrFunctions">
+            <div id="leftColumn">
+                <h4>Определить</h4>
+                <div>
+                    <div>
+                        <input type="checkbox" name="deter1" id="deter1" value="" onclick="func1()">
+                        <label for="deter1">Минимальный элемент</label>
+                    </div>
+                    <div>
+                        <input id="deter1Val" type="number" name="deter1" class="numberLeft" readonly>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" name="deter2" id="deter2" value="" onclick="func2()">
+                        <label for="deter2">Максимальный элемент</label>
+                    </div>
+                    <div>
+                        <input id="deter2Val" type="number" name="deter2" class="numberLeft" readonly>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" name="deter3" id="deter3" value="" onclick="func3()">
+                        <label for="deter3">Сумма элементов</label>
+                    </div>
+                    <div>
+                        <input id="deter3Val" type="number" name="deter3" class="numberLeft" readonly>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" name="deter4" id="deter4" value="" onclick="func4()">
+                        <label for="deter4">Число отрицательных</label>
+                    </div>
+                    <div>
+                        <input id="deter4Val" type="number" name="deter4" class="numberLeft" readonly>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" name="deter5" id="deter5" value="" onclick="func5()">
+                        <label for="deter5">Число не отрицательных</label>
+                    </div>
+                    <div>
+                        <input id="deter5Val" type="number" name="deter5" class="numberLeft" readonly>
+                    </div>
+                </div>
+            </div>
+            <div id="rightColumn">
+                <h4>Сортировать</h4>
+                <div>
+                    <div>
+                        <input type="radio" name="sort" id="sort1" value="1">
+                        <label for="sort1">По возрастанию</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sort" id="sort2" value="2">
+                        <label for="sort2">По убыванию</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sort" id="sort3" value="3" checked>
+                        <label for="sort3">Без сортировки</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="resultedArray">
+            <label for="resArray">Отсортированный массив</label>
+            <input type="text" name="resArray" id="resArray" value="" readonly>
+        </div>
+        <div id="buttonSection">
+            <button type="submit" id="submit2" disabled="disabled"> 
+                Вычислить
+            </button>
+        </div>
+    </form>
+    <script src="js.js"></script>
+    <script src="js2.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Валютный калькулятор</h1>
+    </header>
+    <form id="main-form" method="post">
+        <div id="formInputs">
+            <div id="leftColumn">
+                <div id="leftColumnOne">
+                    <div>
+                        <label for="selectFirst">Из</label>
+                    </div>
+                    <div>
+                        <select name="select1" id="selectFirst" required>
+                            <option selected>Рубли</option>
+                            <option>Евро</option>
+                            <option>Доллар</option>
+                            <option>Фунт стерлингов</option>
+                            <option>Японская иена</option>
+                            <option>Китайский юань</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <label for="selectSecond">В</label>
+                    </div>
+                    <div>
+                        <select name="select2" id="selectSecond" required>
+                            <option>Рубли</option>
+                            <option>Евро</option>
+                            <option selected>Доллар</option>
+                            <option>Фунт стерлингов</option>
+                            <option>Японская иена</option>
+                            <option>Китайский юань</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rightColumn">
+
+                <div>
+                    <div>
+                        <label for="text-first">Курс</label>
+                    </div>
+
+                    <div>
+                        <input name="textFirst" type="number" id="text-first" onkeyup="checkInputs()" placeholder="Введите курс" required> 
+                    </div>
+                </div>
+                
+                <div>
+                    <div>
+                        <label for="text-second">Переводимая сумма</label>
+                    </div>
+
+                    <div>
+                        <input name="textSecond" type="number" id="text-second" onkeyup="checkInputs()" placeholder="Ваша сумма" required> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="divResult">
+            <div>
+                <label for="result">Результат</label>
+            </div>
+            <div>
+                <!-- <input type="text" id="result" onkeyup="checkResult()" readonly> -->
+                <textarea  id="result" onkeyup="checkResult()" value="0" readonly> </textarea>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <div id="leftButton">
+                <button type="submit" name="submit1" id="submit1" disabled="disabled">Посчитать</button>
+            </div>
+
+            <div id="rightButton">
+                <button type="submit" name="submit2" id="submit2" >Очистить</button>
+            </div>
+        </div>
+
+    </form>
+    
+
+<script src="js.js"></script>
+</body>
+</html>
